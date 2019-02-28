@@ -11,19 +11,20 @@ import java.io.InputStreamReader;
 
 public class InputParser {
 
-    public List <Photo> parse(String filename) {
+    public List<Photo> parse(String filename) {
         AtomicInteger id = new AtomicInteger();
-        return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename)).lines()
-        .skip(1))
-        .map(line -> { 
-            HorV orientation = getOrientation(line);
-            String[] split = line.split(" ");
+        return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename))).lines()
+                .skip(1)
+                .map(line -> {
+                    HorV orientation = getOrientation(line);
+                    String[] split = line.split(" ");
 
-            Set<String> tags = Arrays.stream(split)
-                .skip(2)
-                .collect(ToSet());
-            retunr new Photo(orientation, id.incrementAndGet(), tags);
-        }).collect(Collectors.toList());
+                    Set<String> tags = Arrays.stream(split)
+                            .skip(2)
+                            .collect(toSet());
+                    return new Photo(orientation, id.getAndIncrement(), tags);
+                })
+                .collect(Collectors.toList());
     }
 
 private HorV getOrientation(String line) {
@@ -33,6 +34,7 @@ private HorV getOrientation(String line) {
         case 'V' :
             return HorV.VERTICAL;
      }
+    }
  
 
 public static void main(String[] args) {
