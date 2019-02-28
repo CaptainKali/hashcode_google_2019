@@ -9,12 +9,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class InputParser
+public class InputParser {
 
-    public list <Photo> parse(String filename) {
+    public List <Photo> parse(String filename) {
         AtomicInteger id = new AtomicInteger() 
-        return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename))).lines()
-        .skip(1)
+        return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename)).lines()
+        .skip(1))
         .map -> line { 
             HorV orientation = getOrientation(line);
             String[] split = line.split(" ");

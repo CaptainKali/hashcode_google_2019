@@ -1,5 +1,11 @@
 package hashcode4;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+import java.util.stream.Stream;
+
 public class Main {
 
 	static final String INPUT_A = "a_example.txt";
