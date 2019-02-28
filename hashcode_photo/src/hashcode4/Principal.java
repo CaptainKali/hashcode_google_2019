@@ -21,8 +21,6 @@ public class Principal {
                         throw new RuntimeException(e);
                     }
                 });
-		 
-
 	}
 	
 	/*private static void sysout() {

@@ -44,7 +44,26 @@ public class Photo {
 		this.tags = tags;
 	}
 	
-	
-	
+	public Photo(Orientation orientation, int id, Set<String> tags) {
+        this.orientation = orientation;
+        this.id = id;
+        this.tags = tags;
+    }
 
+	@Override
+    public String toString() {
+        return "Photo{" +
+                "orientation=" + orientation +
+                ", id='" + id + '\'' +
+                ", tags=" + tags +
+                '}';
+    }
+
+    public boolean isHorizontal() {
+        return orientation == Orientation.HORIZONTAL;
+    }
+
+    public boolean isVertical() {
+        return orientation == Orientation.VERTICAL;
+    }
 }
