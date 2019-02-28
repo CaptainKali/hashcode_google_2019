@@ -1,6 +1,7 @@
 package hashcode4;
 
 import java.util.ArrayList;
+import jaav.util.Set;
 
 public class Photo {
 	
