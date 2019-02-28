@@ -33,8 +33,9 @@ private HorV getOrientation(String line) {
         case 'V' :
             return HorV.VERTICAL;
      }
-}  
+ 
 
 public static void main(String[] args) throws IOException {
     System.out.println("new InputParser().parse() = " + new InputParser().parse("a_example.txt"));
+}
 }
