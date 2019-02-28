@@ -1,14 +1,10 @@
 package hashcode4;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.*;
+import com.google.common.collect.Sets;
 
 import static java.lang.Math.min;
-import static java.util.Arrays.asList;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toSet;
+import static java.util.*;
 
 public class Slide {
 
