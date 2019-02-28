@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class InputParser {
 
     public List <Photo> parse(String filename) {
-        AtomicInteger id = new AtomicInteger() 
+        AtomicInteger id = new AtomicInteger();
         return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename)).lines()
         .skip(1))
         .map(line -> { 
@@ -35,7 +35,7 @@ private HorV getOrientation(String line) {
      }
  
 
-public static void main(String[] args) throws IOException {
+public static void main(String[] args) {
     System.out.println("new InputParser().parse() = " + new InputParser().parse("a_example.txt"));
 }
 }
