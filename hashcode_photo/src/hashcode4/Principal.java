@@ -36,6 +36,3 @@ public class Principal {
         writer.close();
     }
 }
-
-
-}
