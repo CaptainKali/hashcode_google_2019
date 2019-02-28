@@ -25,6 +25,7 @@ public class Principal {
 
 	private static List<Slide> run(List<Photo> photos) {
 		// return execute algo
+		System.out.println("test");
 	}
 
 	private static void write(String inputFile, List<Slide> slides) throws IOException {
