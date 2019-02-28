@@ -1,6 +1,6 @@
 package hashcode4;
 
-public class Principal {
+public class Main {
 
 	static final String INPUT_A = "a_example.txt";
     static final String INPUT_B = "b_lovely_landscapes.txt";
