@@ -22,12 +22,10 @@ public class Principal {
                     }
                 });
 	}
-	
-	/*private static void sysout() {
-		// TODO Auto-generated method stub
-		System.out.println("hello world");
-	}*/
 
+	private static List<Slide> run(List<Photo> photos) {
+		// return execute algo
+	}
 
 	private static void write(String inputFile, List<Slide> slides) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(inputFile.replace("txt", "out")));
