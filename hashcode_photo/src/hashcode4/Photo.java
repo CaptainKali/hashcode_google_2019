@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Photo {
 	
+	private int id;
+	
 	private String orientation;
 	
 	private int nbTags;
