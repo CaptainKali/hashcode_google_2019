@@ -25,9 +25,21 @@ public class Principal {
 
 	}
 	
-	private static void sysout() {
+	/*private static void sysout() {
 		// TODO Auto-generated method stub
 		System.out.println("hello world");
-	}
+	}*/
+
+
+	private static void write(String inputFile, List<Slide> slides) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(inputFile.replace("txt", "out")));
+        writer.write(slides.size() + "\n");
+        for (Slide slide : slides) {
+            writer.write(slide.getPrintString() + "\n");
+        }
+        writer.close();
+    }
+}
+
 
 }
