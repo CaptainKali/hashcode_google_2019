@@ -15,7 +15,7 @@ public class InputParser {
         AtomicInteger id = new AtomicInteger() 
         return new BufferedReader(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(filename)).lines()
         .skip(1))
-        .map -> line { 
+        .map(line -> { 
             HorV orientation = getOrientation(line);
             String[] split = line.split(" ");
 
