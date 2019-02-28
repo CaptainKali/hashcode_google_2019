@@ -2,7 +2,7 @@ package hashcode4;
 
 import java.util.ArrayList;
 
-public class photo {
+public class Photo {
 	
 	private String orientation;
 	
