@@ -14,7 +14,6 @@ public class Main {
     static final String INPUT_D = "d_pet_pictures.txt";
     static final String INPUT_E = "e_shiny_selfies.txt";
 
-
 	public static void main(String[] args) {
 		InputParser parser = new InputParser();
         Stream.of(INPUT_A, INPUT_B, INPUT_C, INPUT_D, INPUT_E)
